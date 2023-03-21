@@ -10,7 +10,7 @@
       </header>
 
       {% comment %} Start of main menu {% endcomment %}
-      <nav aria-label="{{ 'layout.mobile_navigation.menu_aria_label' | t | escape }}">
+      <nav class="side-menu-nav" aria-label="{{ 'layout.mobile_navigation.menu_aria_label' | t | escape }}">
         <ul class="mobile-nav-menu plain">
           {% for link in linklists[section.settings.menu_linklist].links %}
             <li class="nav-item{% if link.active %} active{% endif %}">

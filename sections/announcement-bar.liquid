@@ -4,7 +4,7 @@
 
 			<div class="announcement-bar {% if settings.announcement_col_bar == settings.toolbar_col_bg %}announcement-bar--same-color{% endif %}" data-cc-animate data-section-type="announcement-bar">
 				<div class="container">
-					<div class="announcement-bar__inner">
+					<div class="announcement-bar__inner inner-bar">
 						{%- liquid
 							assign showing_currency_or_locale = false
 							if section.settings.show_language_selector or section.settings.show_country_selector
@@ -27,7 +27,9 @@
 									<span class="announcement-bar__text__inner">
 							{%- endif -%}
 
+							{%- if section.settings.announcement_text != blank -%}
 								{{- section.settings.announcement_text | escape -}}
+							{% endif %}
 
 							{%- if section.settings.announcement_link != blank -%}
 								</a>
@@ -43,6 +45,80 @@
 						{%- elsif section.settings.show_social_icons -%}
 							<div class="announcement-bar__spacer desktop-only"></div>
 						{%- endif -%}
+
+						<!-- Announcement bar menu -->
+
+						{% comment %} {% liquid
+							if section.settings.menu.links == blank
+								assign announcement_menu_linklist = linklists[section.settings.announcement_bar_menu].links
+							else
+								assign announcement_menu_linklist = section.settings.announcement_bar_menu.links
+							endif
+						%} {% endcomment %}
+
+						  {% comment %} <ul data-da=".side-menu-nav, 767, 1" id="horizontal-multilevel-menu"> {% endcomment %}
+						  {% comment %} <ul id="horizontal-multilevel-menu">
+						  {%- for link in announcement_menu_linklist -%}
+							<li>
+							  <a class="root-item" href="{{ link.url }}" {% if link.active %}aria-current="page"{% endif %}>
+								{{ link.title }}
+							  </a>
+					  
+							  {%- if link.links != blank -%}
+								<ul>
+								  {%- for child_link in link.links -%}
+									<li>
+									  <a href="{{ child_link.url }}" {% if child_link.active %}aria-current="page"{% endif %}>
+										{{ child_link.title }}
+									  </a>
+					  
+									  {%- if child_link.links != blank -%}
+										<ul>
+										  {%- for grandchild_link in child_link.links -%}
+											<li>
+											  <a href="{{ grandchild_link.url }}" {% if grandchild_link.active %}aria-current="page"{% endif %}>
+												{{ grandchild_link.title }}
+											  </a>
+											</li>
+										  {%- endfor -%}
+										</ul>
+									  {%- endif -%}
+					  
+									</li>
+								  {%- endfor -%}
+								</ul>
+							  {%- endif -%}
+					  
+							</li>
+						  {%- endfor -%}
+						  </ul> {% endcomment %}
+
+						{% comment %} <ul id="horizontal-multilevel-menu">
+							<li><a href="/company/" class="root-item"><span>About CLUB120</span></a></li>
+							<li>
+								<a href="/info/faq/" class="root-item"><span>Customer Service</span></a>
+								<ul>
+									<li><a href="/help/rewards-program/">Rewards Program</a></li>
+									<li><a href="/help/delivery/">Delivery & Payment</a></li>
+								</ul>
+							</li>
+							<li><a href="/blog/" class="root-item"><span>Blog</span></a></li>
+						</ul> {% endcomment %}
+
+						{% comment %} <div class="login-wrapper">
+							{% if shop.customer_accounts_enabled %}
+								{% if customer %}
+								<a href="{{ routes.account_url }}" class="customer-account">account</a>
+								{{ 'Log out' | customer_logout_link | replace: '<a', '<a class="customer-logout-link"' }}
+								{% else %}
+								{% render 'icon-user' %} {{ 'Sign in&nbsp;/' | customer_login_link | replace: '<a', '<a class="customer-login-link"' }}
+								{{ '&nbsp;Registration' | customer_register_link | replace: '<a', '<a class="customer-register-link"' }}
+								{% endif %}
+							{% endif %}
+						</div> {% endcomment %}
+
+						<!-- Announcement bar menu -->
+	
 					</div>
 				</div>
 			</div>

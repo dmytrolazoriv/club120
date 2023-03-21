@@ -1,0 +1,20 @@
+/* ===== Search bar styles ===== */
+
+.main-search__form {
+    /* border: 1px solid #e2e4e7; */
+    border: none;
+}
+
+.main-search__form button {
+    background-color: #89c21e;
+}
+
+/* ===== Search bar styles ===== */
+
+/* ===== Header styles ===== */
+
+.toolbar-container {
+    background-color: #174733;
+}
+
+/* ===== Header styles ===== */
