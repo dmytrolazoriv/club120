@@ -576,7 +576,7 @@
       "type": "featured-blog",
       "settings": {
         "title": "Blog",
-        "blog": "peptides-what-are-they-4",
+        "blog": "news",
         "crop_ratio": "16-9",
         "show_author": false,
         "show_view_all": true
