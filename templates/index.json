@@ -290,8 +290,8 @@
         "image_overlay_style": "none",
         "alternate_bg_color": false,
         "caption_show": true,
-        "caption_color": "#174733",
-        "caption_bg": "#f4f2e9",
+        "caption_color": "#5c8018",
+        "caption_bg": "#ffffff",
         "caption_opacity": 88
       }
     },
