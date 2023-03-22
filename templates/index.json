@@ -201,7 +201,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "Best Sellers",
-        "collection": "vitamins",
+        "collection": "cosmetics",
         "layout": "carousel",
         "products_per_row": 5,
         "mobile_products_per_row": "2",
@@ -298,12 +298,6 @@
     "1590157729940": {
       "type": "featured-collections",
       "blocks": {
-        "1590157729940-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "vitamins"
-          }
-        },
         "1590157729940-1": {
           "type": "collection",
           "settings": {
@@ -321,20 +315,12 @@
           "settings": {
             "collection": "super-deals"
           }
-        },
-        "1590578358116": {
-          "type": "collection",
-          "settings": {
-            "collection": "vitamins"
-          }
         }
       },
       "block_order": [
-        "1590157729940-0",
         "1590157729940-1",
         "1590157729940-2",
-        "1590157729940-3",
-        "1590578358116"
+        "1590157729940-3"
       ],
       "settings": {
         "heading": "Catalog",
