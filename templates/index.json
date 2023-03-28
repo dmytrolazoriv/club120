@@ -52,15 +52,15 @@
         "1590331020519": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/73173bd28e895e3c121a4cc677bbce79.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/73173bd28e895e3c121a4cc677bbce79.jpg",
+            "image": "shopify:\/\/shop_images\/928389f128a784de691dc488dd5b83b8.png",
+            "mobile_image": "shopify:\/\/shop_images\/1d5e6638e3b464c8513425080e600fe2.png",
             "desktop_image_position": "center center",
             "mobile_image_position": "center center",
-            "subheading": "Subheading",
-            "title": "Tell your story",
-            "title_size": 60,
+            "subheading": "EPITALON",
+            "title": "Sleep tight at night, be active\nduring the day, stay healthy",
+            "title_size": 70,
             "heading_h1": false,
-            "text": "<p>Pair text with an image to tell a story<\/p>",
+            "text": "",
             "enlarge_text": true,
             "button_1_link": "",
             "button_1_label": "Shop now",
@@ -68,39 +68,15 @@
             "button_2_link": "",
             "button_2_label": "",
             "button_2_style": "primary",
-            "text_alignment": "center center",
+            "text_alignment": "top left",
             "mobile_text_alignment": "center"
-          }
-        },
-        "46fa93d5-e71a-4580-8390-47faca5a98c8": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/05a845ff3719695dfb38405950cfdccb.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/05a845ff3719695dfb38405950cfdccb.jpg",
-            "desktop_image_position": "center center",
-            "mobile_image_position": "center center",
-            "subheading": "Subheading",
-            "title": "Tell your story",
-            "title_size": 40,
-            "heading_h1": false,
-            "text": "<p>Pair text with an image to tell a story<\/p>",
-            "enlarge_text": true,
-            "button_1_link": "",
-            "button_1_label": "Shop now",
-            "button_1_style": "primary",
-            "button_2_link": "",
-            "button_2_label": "",
-            "button_2_style": "primary",
-            "text_alignment": "center center",
-            "mobile_text_alignment": "center center"
           }
         }
       },
       "block_order": [
         "1478797384865-0",
         "1590330964852",
-        "1590331020519",
-        "46fa93d5-e71a-4580-8390-47faca5a98c8"
+        "1590331020519"
       ],
       "settings": {
         "height": "fixed",
