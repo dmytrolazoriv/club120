@@ -206,7 +206,7 @@
         "settings": {
           "announcement_show": true,
           "announcement_home_only": false,
-          "announcement_text": "BUY 1, GET 1 50% OFF",
+          "announcement_text": "BUY ONE, GET ONE 50% OFF",
           "announcement_link": "",
           "show_social_icons": true,
           "show_country_selector": true,
