@@ -6,15 +6,15 @@
         "1478797384865-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/486efe5942df40458a48e2eeb572abe4.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/486efe5942df40458a48e2eeb572abe4.jpg",
+            "image": "shopify:\/\/shop_images\/de37a049064c068aa4c33b58bd85fd1e.png",
+            "mobile_image": "shopify:\/\/shop_images\/69410bbd5792f79aa7be62e8b998dbfa.png",
             "desktop_image_position": "center center",
             "mobile_image_position": "center center",
-            "subheading": "Subheading",
-            "title": "Tell your story",
-            "title_size": 60,
+            "subheading": "EPITIDE",
+            "title": "LIFELONG YOUTH DESIGNED BY SCIENCE",
+            "title_size": 70,
             "heading_h1": false,
-            "text": "<p>Pair text with an image to tell a story<\/p>",
+            "text": "",
             "enlarge_text": true,
             "button_1_link": "",
             "button_1_label": "Shop now",
@@ -29,15 +29,15 @@
         "1590330964852": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/5c02a8df251daf34cf95745a8441aa4a.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/5c02a8df251daf34cf95745a8441aa4a.jpg",
-            "desktop_image_position": "center center",
-            "mobile_image_position": "center center",
-            "subheading": "Subheading",
-            "title": "Tell your story",
-            "title_size": 60,
+            "image": "shopify:\/\/shop_images\/women_s-health-formula-_1.png",
+            "mobile_image": "shopify:\/\/shop_images\/women_s-health-formula-_1_2e77eb7b-f3e8-466b-9d45-596f02c1eb42.png",
+            "desktop_image_position": "right center",
+            "mobile_image_position": "right center",
+            "subheading": "Women’s Health Formula",
+            "title": "Normalization of the functional state of the ovaries",
+            "title_size": 70,
             "heading_h1": false,
-            "text": "<p>Pair text with an image to tell a story<\/p>",
+            "text": "",
             "enlarge_text": true,
             "button_1_link": "",
             "button_1_label": "",
@@ -52,15 +52,15 @@
         "1590331020519": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/73173bd28e895e3c121a4cc677bbce79.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/73173bd28e895e3c121a4cc677bbce79.jpg",
+            "image": "shopify:\/\/shop_images\/928389f128a784de691dc488dd5b83b8.png",
+            "mobile_image": "shopify:\/\/shop_images\/1d5e6638e3b464c8513425080e600fe2.png",
             "desktop_image_position": "center center",
             "mobile_image_position": "center center",
-            "subheading": "Subheading",
-            "title": "Tell your story",
-            "title_size": 60,
+            "subheading": "EPITALON",
+            "title": "Sleep tight at night, be active\nduring the day, stay healthy",
+            "title_size": 70,
             "heading_h1": false,
-            "text": "<p>Pair text with an image to tell a story<\/p>",
+            "text": "",
             "enlarge_text": true,
             "button_1_link": "",
             "button_1_label": "Shop now",
@@ -68,39 +68,15 @@
             "button_2_link": "",
             "button_2_label": "",
             "button_2_style": "primary",
-            "text_alignment": "center center",
+            "text_alignment": "top left",
             "mobile_text_alignment": "center"
-          }
-        },
-        "46fa93d5-e71a-4580-8390-47faca5a98c8": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/05a845ff3719695dfb38405950cfdccb.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/05a845ff3719695dfb38405950cfdccb.jpg",
-            "desktop_image_position": "center center",
-            "mobile_image_position": "center center",
-            "subheading": "Subheading",
-            "title": "Tell your story",
-            "title_size": 40,
-            "heading_h1": false,
-            "text": "<p>Pair text with an image to tell a story<\/p>",
-            "enlarge_text": true,
-            "button_1_link": "",
-            "button_1_label": "Shop now",
-            "button_1_style": "primary",
-            "button_2_link": "",
-            "button_2_label": "",
-            "button_2_style": "primary",
-            "text_alignment": "center center",
-            "mobile_text_alignment": "center center"
           }
         }
       },
       "block_order": [
         "1478797384865-0",
         "1590330964852",
-        "1590331020519",
-        "46fa93d5-e71a-4580-8390-47faca5a98c8"
+        "1590331020519"
       ],
       "settings": {
         "height": "fixed",
@@ -201,7 +177,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "Best Sellers",
-        "collection": "vitamins",
+        "collection": "cosmetics",
         "layout": "carousel",
         "products_per_row": 5,
         "mobile_products_per_row": "2",
@@ -290,20 +266,14 @@
         "image_overlay_style": "none",
         "alternate_bg_color": false,
         "caption_show": true,
-        "caption_color": "#174733",
-        "caption_bg": "#f4f2e9",
+        "caption_color": "#5c8018",
+        "caption_bg": "#ffffff",
         "caption_opacity": 88
       }
     },
     "1590157729940": {
       "type": "featured-collections",
       "blocks": {
-        "1590157729940-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "vitamins"
-          }
-        },
         "1590157729940-1": {
           "type": "collection",
           "settings": {
@@ -321,20 +291,12 @@
           "settings": {
             "collection": "super-deals"
           }
-        },
-        "1590578358116": {
-          "type": "collection",
-          "settings": {
-            "collection": "vitamins"
-          }
         }
       },
       "block_order": [
-        "1590157729940-0",
         "1590157729940-1",
         "1590157729940-2",
-        "1590157729940-3",
-        "1590578358116"
+        "1590157729940-3"
       ],
       "settings": {
         "heading": "Catalog",
@@ -351,16 +313,16 @@
       "settings": {
         "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "subheading": "",
-        "title": "Tell your story",
+        "title": "How is the sale linked?",
         "title_size": 48,
         "heading_h1": false,
-        "text": "<p>with auto-playing, auto-looping videos<\/p>",
+        "text": "<p>CLUB120 uses a method called \"last click\", which is the most common form of linking sales. You will only receive rewards for referral orders that have used your referral code.<\/p>",
         "enlarge_text": false,
         "button_label": "",
         "button_link": "",
         "button_style": "primary",
         "text_alignment": "center center",
-        "full_width": false,
+        "full_width": true,
         "height_desktop": 560,
         "height_mobile": 440,
         "image_overlay_style": "shadow"
@@ -439,13 +401,14 @@
       "type": "image-with-text",
       "settings": {
         "subheading": "",
-        "title": "Media with text",
-        "text": "<p>Use this text to share information about your store with your customers. Describe product, share announcements, or welcome customers to your store.<\/p>",
+        "title": "Share CLUB120 products with your friends and get rewards!\n\nGet rewards is easy!",
+        "text": "<p>Through the CLUB120 Rewards program, you can share information about your favorite CLUB120 products with friends or family. Buyers will receive a 5% discount on their orders. You, in turn, will earn rewards.<\/p>",
         "button_label": "",
         "button_link": "",
         "button_style": "primary",
         "text_alignment": "left",
         "text_width": 50,
+        "image": "shopify:\/\/shop_images\/e25510fab3c33bbc9ecb389f0219429d.svg",
         "video": "",
         "image_width": 100,
         "image_position": "right",
@@ -505,7 +468,7 @@
         "163350604940b8284f-5"
       ],
       "settings": {
-        "product": "",
+        "product": "epitide-pineal-gland-peptide-32-orogranule",
         "page_width": "medium",
         "prod_show_thumbnails": true,
         "enable_video_looping": false,
@@ -576,7 +539,7 @@
       "type": "featured-blog",
       "settings": {
         "title": "Blog",
-        "blog": "",
+        "blog": "news",
         "crop_ratio": "16-9",
         "show_author": false,
         "show_view_all": true
