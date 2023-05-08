@@ -296,4 +296,8 @@
     {% endif %}
   </div>
 </div>
+
+{% comment %}Start automatically added Judge.me widget{% endcomment %}
+  {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', concierge_install: true, product: product %}
+{% comment %}End automatically added Judge.me widget{% endcomment %}
 {% assign forloop_index = false %}

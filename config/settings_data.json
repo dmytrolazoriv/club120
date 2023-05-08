@@ -5,7 +5,7 @@
     "links_col": "#1b1b1b",
     "site_bg_col": "#ffffff",
     "cart_summary_bg_col": "#ffffff",
-    "star_col": "#ff4eed",
+    "star_col": "#5c8018",
     "feature_col": "#5c8018",
     "feature_over_col": "#ffffff",
     "divider_col": "#f4f4f4",
@@ -15,7 +15,7 @@
     "alt_bg_text_col": "#1b1b1b",
     "announcement_col_bar": "#5c8018",
     "announcement_col_text": "#ffffff",
-    "toolbar_col_bg": "#174733",
+    "toolbar_col_bg": "#54c050",
     "toolbar_col_text": "#ffffff",
     "nav_accent_col": "#5c8018",
     "nav_main_bg_col": "#ffffff",
@@ -39,7 +39,7 @@
     "popup_text_col": "#1b1b1b",
     "popup_background_col": "#ffffff",
     "type_base_font": "neue_haas_unica_n4",
-    "type_heading_font": "fs_koopman_i9",
+    "type_heading_font": "fs_koopman_n9",
     "capitalize_headings": false,
     "type_nav_font": "neue_haas_unica_n4",
     "type_logo_font": "archivo_n6",
@@ -76,14 +76,16 @@
     "swatch_shape_grid": "circle",
     "search_type": "product,article,page",
     "live_search_show_vendor": true,
-    "social_twitter_url": "https:\/\/twitter.com\/shopify",
-    "social_facebook_url": "https:\/\/facebook.com\/shopify",
-    "social_instagram_url": "https:\/\/www.instagram.com\/shopify\/",
-    "social_youtube_url": "https:\/\/youtube.com\/user\/shopify",
-    "social_tiktok_url": "https:\/\/tiktok.com\/@shopify?",
+    "favicon": "shopify:\/\/shop_images\/fav.png",
+    "social_twitter_url": "",
+    "social_facebook_url": "",
+    "social_instagram_url": "",
+    "social_youtube_url": "",
+    "social_tiktok_url": "",
     "social_custom_icon_mobile_nav": "shopify:\/\/shop_images\/e25510fab3c33bbc9ecb389f0219429d.svg",
     "section_padding": "large",
     "cart_type": "drawer-dynamic",
+    "currency_code_enabled": false,
     "superscript_decimals": true,
     "checkout_logo_position": "center",
     "checkout_logo_size": "small",
@@ -128,8 +130,8 @@
           "social_links_mob": true,
           "logo": "shopify:\/\/shop_images\/LogoCLUB120_1.svg",
           "compact_logo": "shopify:\/\/shop_images\/LogoCLUB120_1.svg",
-          "logo_width": 105,
-          "mobile_logo_width": 75,
+          "logo_width": 150,
+          "mobile_logo_width": 110,
           "logo_location": "toolbar",
           "header_layout": "left",
           "menu_linklist": "main-menu",
@@ -140,7 +142,7 @@
           "cart_icon": "cart",
           "search_bar": "input_desktop",
           "search_text_box_large": true,
-          "search_type_dropdown": true
+          "search_type_dropdown": false
         }
       },
       "footer": {
@@ -204,11 +206,11 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "settings": {
-          "announcement_show": true,
+          "announcement_show": false,
           "announcement_home_only": false,
-          "announcement_text": "BUY ONE, GET ONE 50% OFF",
+          "announcement_text": "Buy 1 product\nGet 1 CRONOREX 10",
           "announcement_link": "",
-          "show_social_icons": true,
+          "show_social_icons": false,
           "show_country_selector": true,
           "show_language_selector": true
         }
@@ -216,7 +218,21 @@
     },
     "content_for_index": [
 
-    ]
+    ],
+    "blocks": {
+      "judgeme_core_d304301b": {
+        "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "855628211100114053": {
+        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
   },
   "presets": {
     "Glow": {

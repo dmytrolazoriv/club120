@@ -6,69 +6,69 @@
         "1478797384865-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/de37a049064c068aa4c33b58bd85fd1e.png",
+            "image": "shopify:\/\/shop_images\/1.png",
             "mobile_image": "shopify:\/\/shop_images\/69410bbd5792f79aa7be62e8b998dbfa.png",
             "desktop_image_position": "center center",
             "mobile_image_position": "center center",
             "subheading": "EPITIDE",
-            "title": "LIFELONG YOUTH DESIGNED BY SCIENCE",
+            "title": "LIFELONG YOUTH \nDESIGNED \nBY SCIENCE",
             "title_size": 70,
             "heading_h1": false,
             "text": "",
             "enlarge_text": true,
-            "button_1_link": "",
-            "button_1_label": "Shop now",
+            "button_1_link": "https:\/\/club120.com\/products\/epitide",
+            "button_1_label": "shop now",
             "button_1_style": "primary",
             "button_2_link": "",
             "button_2_label": "",
             "button_2_style": "primary",
-            "text_alignment": "center center",
-            "mobile_text_alignment": "center"
+            "text_alignment": "center right",
+            "mobile_text_alignment": "center center"
           }
         },
         "1590330964852": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/women_s-health-formula-_1.png",
+            "image": "shopify:\/\/shop_images\/Women1.png",
             "mobile_image": "shopify:\/\/shop_images\/women_s-health-formula-_1_2e77eb7b-f3e8-466b-9d45-596f02c1eb42.png",
             "desktop_image_position": "right center",
             "mobile_image_position": "right center",
             "subheading": "Women’s Health Formula",
-            "title": "Normalization of the functional state of the ovaries",
+            "title": "Normalization \nof the functional \nstate of the ovaries",
             "title_size": 70,
             "heading_h1": false,
             "text": "",
             "enlarge_text": true,
-            "button_1_link": "",
+            "button_1_link": "https:\/\/club120.com\/products\/natura-sanat-women-s-health-formula",
             "button_1_label": "",
             "button_1_style": "primary",
             "button_2_link": "",
             "button_2_label": "Shop now",
             "button_2_style": "primary",
-            "text_alignment": "center center",
+            "text_alignment": "center right",
             "mobile_text_alignment": "center center"
           }
         },
         "1590331020519": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/928389f128a784de691dc488dd5b83b8.png",
+            "image": "shopify:\/\/shop_images\/930e63c0351991497c7bd5dbbb1d7c0a.png",
             "mobile_image": "shopify:\/\/shop_images\/1d5e6638e3b464c8513425080e600fe2.png",
             "desktop_image_position": "center center",
             "mobile_image_position": "center center",
             "subheading": "EPITALON",
-            "title": "Sleep tight at night, be active\nduring the day, stay healthy",
+            "title": "Sleep tight at night, \nbe active \nduring the day, \nstay healthy",
             "title_size": 70,
             "heading_h1": false,
             "text": "",
             "enlarge_text": true,
-            "button_1_link": "",
+            "button_1_link": "https:\/\/club120.com\/products\/nanopep-epitalon-pineal-gland-peptide-oral-spray-20-ml-1",
             "button_1_label": "Shop now",
             "button_1_style": "primary",
             "button_2_link": "",
             "button_2_label": "",
             "button_2_style": "primary",
-            "text_alignment": "top left",
+            "text_alignment": "center left",
             "mobile_text_alignment": "center"
           }
         }
@@ -101,7 +101,7 @@
             "image": "shopify:\/\/shop_images\/0695c2abb3772207e51003f22e764973.svg",
             "title": "Free shipping",
             "text": "",
-            "link": ""
+            "link": "shopify:\/\/pages\/shipping"
           }
         },
         "16317334965826230b-1": {
@@ -111,7 +111,7 @@
             "image": "shopify:\/\/shop_images\/408a7982c7206a527aed82aa4ba43b80.svg",
             "title": "Rewards Program",
             "text": "",
-            "link": ""
+            "link": "shopify:\/\/pages\/rewards-program"
           }
         },
         "16317334965826230b-2": {
@@ -121,7 +121,7 @@
             "image": "shopify:\/\/shop_images\/72a32d5509fdf51532c57642ef8ef2fb.svg",
             "title": "Scientifically proven",
             "text": "",
-            "link": ""
+            "link": "shopify:\/\/pages\/science"
           }
         },
         "de2be852-0a31-4a00-af93-c3caa0e26bd5": {
@@ -131,7 +131,7 @@
             "image": "shopify:\/\/shop_images\/70786f1774af5d1d23f76153e8876441.svg",
             "title": "Premium quality",
             "text": "",
-            "link": ""
+            "link": "shopify:\/\/pages\/quality"
           }
         }
       },
@@ -177,7 +177,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "Best Sellers",
-        "collection": "cosmetics",
+        "collection": "peptides",
         "layout": "carousel",
         "products_per_row": 5,
         "mobile_products_per_row": "2",
@@ -204,6 +204,7 @@
     },
     "1613031288643f7b4a": {
       "type": "gallery",
+      "disabled": true,
       "blocks": {
         "31d318d6-d6aa-43b0-8823-25d2804e8701": {
           "type": "image",
@@ -311,12 +312,12 @@
     "16025138477b66c39b": {
       "type": "background-video",
       "settings": {
-        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video": "https:\/\/youtu.be\/KaoqQpgvMHQ",
         "subheading": "",
-        "title": "How is the sale linked?",
+        "title": "EPITIDE®",
         "title_size": 48,
         "heading_h1": false,
-        "text": "<p>CLUB120 uses a method called \"last click\", which is the most common form of linking sales. You will only receive rewards for referral orders that have used your referral code.<\/p>",
+        "text": "<p>– dietary supplement based on natural peptide EPITHALAMIN®and a mixture of vitamins and minerals for a balanced nutritional diet. EPITIDE®is a revolutionary product that has many years of research and application in clinical practice.<\/p>",
         "enlarge_text": false,
         "button_label": "",
         "button_link": "",
@@ -330,6 +331,7 @@
     },
     "1619085348a65975c4": {
       "type": "gallery",
+      "disabled": true,
       "blocks": {
         "1619085348a65975c4-0": {
           "type": "image",
@@ -399,6 +401,7 @@
     },
     "1590158040284": {
       "type": "image-with-text",
+      "disabled": true,
       "settings": {
         "subheading": "",
         "title": "Share CLUB120 products with your friends and get rewards!\n\nGet rewards is easy!",
@@ -453,7 +456,7 @@
         "163350604940b8284f-5": {
           "type": "buy_buttons",
           "settings": {
-            "enable_payment_button": false,
+            "enable_payment_button": true,
             "show_pickup_availability": true,
             "show_backorder_text": true
           }
@@ -468,7 +471,7 @@
         "163350604940b8284f-5"
       ],
       "settings": {
-        "product": "epitide-pineal-gland-peptide-32-orogranule",
+        "product": "epitide",
         "page_width": "medium",
         "prod_show_thumbnails": true,
         "enable_video_looping": false,

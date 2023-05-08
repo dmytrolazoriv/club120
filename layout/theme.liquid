@@ -163,10 +163,10 @@
 {%- assign homepage_divider_col_opacity = settings.homepage_divider_col | color_extract: 'alpha' -%}
 <body class="template-{{ template.name }} {% if template.suffix != blank %}template-sfx-{{ template.suffix }}{% endif %} {% if template.directory != blank %}template-dir-{{ template.directory }}{% endif %}"
       data-cc-animate-timeout="80">
-      <!-- Google Tag Manager (noscript) -->
-      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P4MTPBQ"
-      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-      <!-- End Google Tag Manager (noscript) -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P4MTPBQ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 {% if settings.animations_enabled_desktop %}
   <script>
@@ -365,5 +365,6 @@
 <script src="{{ 'wss.js' | asset_url }}" type="module" defer="defer"></script>
 
 {% render 'body-end-tag' %}
+{% include 'smile-initializer' %}
 </body>
 </html>

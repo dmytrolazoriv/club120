@@ -6,16 +6,20 @@
         "vendor_and_type": {
           "type": "vendor_and_type",
           "settings": {
+            "prod_show_brand": true,
+            "prod_show_type": true
           }
         },
         "title": {
           "type": "title",
           "settings": {
+            "heading_h1": true
           }
         },
         "price": {
           "type": "price",
           "settings": {
+            "show_tax_and_shipping": false
           }
         },
         "rating": {
@@ -26,21 +30,38 @@
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
+            "prod_clicky_opt_names": "",
+            "stock_warning_show": false,
+            "stock_warning_limit": 5,
+            "show_size_chart": false,
+            "size_chart_variant": "Size",
+            "size_chart_page": ""
           }
         },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
+            "enable_payment_button": true,
+            "show_pickup_availability": true,
+            "show_backorder_text": true
           }
         },
         "divider": {
           "type": "divider",
+          "disabled": true,
           "settings": {
+            "show_line": true,
+            "spacing_above": "small",
+            "spacing_below": "small",
+            "show_in_quickbuy": false
           }
         },
         "description": {
           "type": "description",
+          "disabled": true,
           "settings": {
+            "show_in_quickbuy": false,
+            "display": "tab_closed"
           }
         }
       },
@@ -55,16 +76,96 @@
         "description"
       ],
       "settings": {
+        "page_width": "medium",
+        "description_below": true,
+        "show_reviews": true,
+        "enable_video_looping": false,
+        "enable_product_image_zoom": false,
+        "mobile_slideshow_navigation": "arrows"
+      }
+    },
+    "judgeme_section_review_widget_1589": {
+      "type": "apps",
+      "blocks": {
+        "judgeme_review_widget_6fccf0aa": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "judgeme_review_widget_6fccf0aa"
+      ],
+      "settings": {
+      }
+    },
+    "b9ae838a-0cc3-459a-b5b1-1e32113145d2": {
+      "type": "testimonials",
+      "disabled": true,
+      "blocks": {
+        "template--18304227541288__b9ae838a-0cc3-459a-b5b1-1e32113145d2-16805320251343dca6-0": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "4_stars",
+            "image": "shopify:\/\/shop_images\/1.jpg",
+            "quote": "Add customer reviews and testimonials to showcase your store's happy customers.",
+            "title": "Joseph Vaughn"
+          }
+        },
+        "template--18304227541288__b9ae838a-0cc3-459a-b5b1-1e32113145d2-16805320251343dca6-1": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "3_stars",
+            "image": "shopify:\/\/shop_images\/2.jpg",
+            "quote": "Add customer reviews and testimonials to showcase your store's happy customers.",
+            "title": "Joseph Vaughn"
+          }
+        },
+        "template--18304227541288__b9ae838a-0cc3-459a-b5b1-1e32113145d2-16805320251343dca6-2": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5_stars",
+            "image": "shopify:\/\/shop_images\/3.jpg",
+            "quote": "Add customer reviews and testimonials to showcase your store's happy customers.",
+            "title": "Amanda Blackwell"
+          }
+        }
+      },
+      "block_order": [
+        "template--18304227541288__b9ae838a-0cc3-459a-b5b1-1e32113145d2-16805320251343dca6-0",
+        "template--18304227541288__b9ae838a-0cc3-459a-b5b1-1e32113145d2-16805320251343dca6-1",
+        "template--18304227541288__b9ae838a-0cc3-459a-b5b1-1e32113145d2-16805320251343dca6-2"
+      ],
+      "custom_css": [
+        ".testimonials-section {background-color: #f4f2e9;}"
+      ],
+      "settings": {
+        "heading": "Testimonials from our clients",
+        "title_size": 23,
+        "text_alignment": "center",
+        "color_bg": "#f4f2e9",
+        "color_star": "#eeaf2e",
+        "alternate_bg_color": true,
+        "full_width": true,
+        "slide_transition": "slide",
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "use_dot_images": true
       }
     },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
+        "recommendations_title": "You may also like",
+        "grid_show_vendor": false,
+        "products_per_row": 4
       }
     }
   },
   "order": [
     "main",
+    "judgeme_section_review_widget_1589",
+    "b9ae838a-0cc3-459a-b5b1-1e32113145d2",
     "product-recommendations"
   ]
 }
