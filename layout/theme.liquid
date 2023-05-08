@@ -6,6 +6,14 @@
   {% render 'head-tag' %}
 
   <meta name="theme-color" content="{{ settings.feature_col }}">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-P4MTPBQ');</script>
+  <!-- End Google Tag Manager -->
+  
 
   <title>
     {{ page_title }}{% if current_tags %} &ndash; {{ 'general.meta.tagged' | t }} "{{ current_tags | join: ', ' }}"{% endif %}{% if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif %}{% unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless %}
@@ -155,6 +163,10 @@
 {%- assign homepage_divider_col_opacity = settings.homepage_divider_col | color_extract: 'alpha' -%}
 <body class="template-{{ template.name }} {% if template.suffix != blank %}template-sfx-{{ template.suffix }}{% endif %} {% if template.directory != blank %}template-dir-{{ template.directory }}{% endif %}"
       data-cc-animate-timeout="80">
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P4MTPBQ"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
 
 {% if settings.animations_enabled_desktop %}
   <script>
