@@ -1,19 +1,5 @@
-/* ===== Search bar styles ===== */
-
-/* .main-search__form {
-    border: none;
-} */
-
-/* .main-search__form button {
-    background-color: #89c21e;
-} */
-
-/* ===== Search bar styles ===== */
-
-/* ===== Header styles ===== */
-
-/* .toolbar-container {
-    background-color: #174733;
-} */
-
-/* ===== Header styles ===== */
+/* Hide  block with stars from app Judge.me due to display bug */
+.collection-page .jdgm-widget.jdgm-widget {
+    display: none !important;
+}
+/* Hide  block with stars from app Judge.me due to display bug */
