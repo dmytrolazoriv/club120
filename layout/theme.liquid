@@ -6,6 +6,11 @@
   {% render 'head-tag' %}
 
   <meta name="theme-color" content="{{ settings.feature_col }}">
+ {% comment %} For all pages with the corresponding url addresses I add a meta tag with the following attributes {% endcomment %}
+ {% if request.query_string contains '?q=' or request.query_string contains '?filter' or request.query_string contains '?sort' or request.path contains 'checkouts' or request.path contains 'account' or request.path contains 'cart' or request.path contains 'search' %}
+ <meta name="robots" content="noindex, nofollow">
+{% endif %}
+
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
