@@ -14,31 +14,31 @@ images.forEach((image) => {
 
 
 // For all pages with the corresponding url addresses I add a meta tag with the following attributes
-
-document.addEventListener('DOMContentLoaded', function() {
-    // Get the URL of the current page
-    const currentUrl = window.location.href;
+// ===== Not needed yet, since everything works due to liquid code in the theme.liquid file =====
+// document.addEventListener('DOMContentLoaded', function() {
+//     // Get the URL of the current page
+//     const currentUrl = window.location.href;
   
-    // Define an array of regular expressions to match against the URL
-    const regexPatterns = [
-      /\?q=/,
-      /\/search/,
-      /\?filter=/,
-      /\?sort=/,
-      /\/checkouts\//,
-      /\/account/,
-      /\/cart/,
-    ];
+//     // Define an array of regular expressions to match against the URL
+//     const regexPatterns = [
+//       /\?q=/,
+//       /\/search/,
+//       /\?filter=/,
+//       /\?sort=/,
+//       /\/checkouts\//,
+//       /\/account/,
+//       /\/cart/,
+//     ];
   
-    // Check if the current URL matches any of the regular expressions
-    if (regexPatterns.some(pattern => pattern.test(currentUrl))) {
-      // Create a new meta tag element and set its attributes
-      const metaTag = document.createElement('meta');
-      metaTag.setAttribute('name', 'robots');
-      metaTag.setAttribute('content', 'noindex, nofollow');
+//     // Check if the current URL matches any of the regular expressions
+//     if (regexPatterns.some(pattern => pattern.test(currentUrl))) {
+//       // Create a new meta tag element and set its attributes
+//       const metaTag = document.createElement('meta');
+//       metaTag.setAttribute('name', 'robots');
+//       metaTag.setAttribute('content', 'noindex, nofollow');
   
-      // Add the new meta tag element to the head of the document
-      document.head.appendChild(metaTag);
-    }
-  });
+//       // Add the new meta tag element to the head of the document
+//       document.head.appendChild(metaTag);
+//     }
+//   });
   
