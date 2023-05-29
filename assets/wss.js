@@ -47,7 +47,7 @@ images.forEach((image) => {
 // });
 
 // remove links for Canada
-window.addEventListener("load", () => {
+document.addEventListener("DOMSubtreeModified", () => {
   let linkTags = document.querySelectorAll('link[rel="alternate"][hreflang="en-CA"]');
 
   for (let i = 0; i < linkTags.length; i++) {
