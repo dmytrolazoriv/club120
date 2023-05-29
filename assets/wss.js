@@ -42,3 +42,16 @@ images.forEach((image) => {
 //     }
 //   });
   
+// Close the checkout page from indexing
+// document.addEventListener('DOMContentLoaded', function() {
+// });
+
+// remove links for Canada
+window.addEventListener("load", () => {
+  let linkTags = document.querySelectorAll('link[rel="alternate"][hreflang="en-CA"]');
+
+  for (let i = 0; i < linkTags.length; i++) {
+    let linkTag = linkTags[i];
+    linkTag.parentNode.removeChild(linkTag);
+  }
+});
