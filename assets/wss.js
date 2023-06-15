@@ -11,47 +11,55 @@ images.forEach((image) => {
   image.setAttribute('title', alt + ' - photo');
 });
 
+/*Generate the breadcrumb markup dynamically*/
+function generateBreadcrumbMarkup() {
+  let breadcrumbList = {
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": []
+  };
 
+  let pathSegments = window.location.pathname.split('/').filter(function(segment) {
+    return segment !== '';
+  });
 
-// For all pages with the corresponding url addresses I add a meta tag with the following attributes
-// ===== Not needed yet, since everything works due to liquid code in the theme.liquid file =====
-// document.addEventListener('DOMContentLoaded', function() {
-//     // Get the URL of the current page
-//     const currentUrl = window.location.href;
-  
-//     // Define an array of regular expressions to match against the URL
-//     const regexPatterns = [
-//       /\?q=/,
-//       /\/search/,
-//       /\?filter=/,
-//       /\?sort=/,
-//       /\/checkouts\//,
-//       /\/account/,
-//       /\/cart/,
-//     ];
-  
-//     // Check if the current URL matches any of the regular expressions
-//     if (regexPatterns.some(pattern => pattern.test(currentUrl))) {
-//       // Create a new meta tag element and set its attributes
-//       const metaTag = document.createElement('meta');
-//       metaTag.setAttribute('name', 'robots');
-//       metaTag.setAttribute('content', 'noindex, nofollow');
-  
-//       // Add the new meta tag element to the head of the document
-//       document.head.appendChild(metaTag);
-//     }
-//   });
-  
-// Close the checkout page from indexing
-// document.addEventListener('DOMContentLoaded', function() {
-// });
+  let baseUrl = window.location.origin + '/';
+  let position = 1;
 
-// remove links for Canada
-document.addEventListener("DOMSubtreeModified", () => {
-  let linkTags = document.querySelectorAll('link[rel="alternate"][hreflang="en-CA"]');
+  // Generate breadcrumb items dynamically
+  for (let i = 0; i < pathSegments.length; i++) {
+    baseUrl += pathSegments[i] + '/';
+    position++;
 
-  for (let i = 0; i < linkTags.length; i++) {
-    let linkTag = linkTags[i];
-    linkTag.parentNode.removeChild(linkTag);
+    let name = formatName(pathSegments[i]);
+
+    let breadcrumbItem = {
+      "@type": "ListItem",
+      "position": position,
+      "item": {
+        "@id": baseUrl,
+        "name": name
+      }
+    };
+
+    breadcrumbList.itemListElement.push(breadcrumbItem);
   }
-});
+
+  let breadcrumbMarkup = document.createElement('script');
+  breadcrumbMarkup.type = 'application/ld+json';
+  breadcrumbMarkup.innerHTML = JSON.stringify(breadcrumbList);
+
+  let titleElement = document.getElementsByTagName('title')[0];
+  let headElement = document.getElementsByTagName('head')[0];
+  headElement.insertBefore(breadcrumbMarkup, titleElement.nextSibling);
+}
+
+// Format the name by removing dashes and capitalizing first letter of each word
+function formatName(name) {
+  let formattedName = name.replace(/-/g, ' ');
+  formattedName = formattedName.charAt(0).toUpperCase() + formattedName.slice(1).toLowerCase();
+  return formattedName;
+}
+
+// Call the generateBreadcrumbMarkup function when the page is loaded
+window.addEventListener('DOMContentLoaded', generateBreadcrumbMarkup);

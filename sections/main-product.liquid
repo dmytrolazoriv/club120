@@ -12,6 +12,10 @@
 <div class="section container product-container product-container--{{ section.settings.page_width }} {% if is_featured_product %}border-top featured-product-section{% endif %}"
      data-section-type="product-template" data-components="accordion">
 
+  <!-- Begin breadcrumbs -->
+  {% render 'breadcrumbs' %}
+  <!-- End breadcrumbs -->
+
   {% if collection and is_featured_product == false %}
     <div class="inline-row product-collection-links" data-cc-animate>
       {% if collection %}
