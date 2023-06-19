@@ -24,9 +24,13 @@
         "enable_sorting": true,
         "sort_show_featured": true
       }
+    },
+    "faq": {
+      "type": "faq-collection"
     }
   },
   "order": [
-    "main"
+    "main",
+    "faq"
   ]
 }
