@@ -3,3 +3,17 @@
     display: none !important;
 }
 /* Hide  block with stars from app Judge.me due to display bug */
+
+/* Faq section styling */
+summary {
+    cursor: pointer;
+    position: relative;
+    list-style: none;
+}
+
+summary .icon-caret {
+    position: absolute;
+    height: 0.6rem;
+    right: 1.5rem;
+    top: calc(50% - 0.2rem);
+}
