@@ -63,3 +63,13 @@ function formatName(name) {
 
 // Call the generateBreadcrumbMarkup function when the page is loaded
 window.addEventListener('DOMContentLoaded', generateBreadcrumbMarkup);
+
+
+/*Add width and height attributes for images*/
+const logoContainer = document.querySelector('.footer-logo-container');
+const logoImg = logoContainer.querySelector('img');
+
+logoImg.setAttribute('width', '133');
+logoImg.setAttribute('height', '43');
+logoImg.setAttribute('alt', 'Footer logo');
+
