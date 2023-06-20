@@ -27,10 +27,14 @@
     },
     "faq": {
       "type": "faq-collection"
+    },
+    "table": {
+      "type": "table-collection"
     }
   },
   "order": [
     "main",
+    "table",
     "faq"
   ]
 }
