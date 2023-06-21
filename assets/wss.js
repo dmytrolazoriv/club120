@@ -73,3 +73,10 @@ logoImg.setAttribute('width', '133');
 logoImg.setAttribute('height', '43');
 logoImg.setAttribute('alt', 'Footer logo');
 
+const breadcrumbActive = document.querySelector('.breadcrumb-active');
+const spanElement = breadcrumbActive.querySelector('span');
+const spanText = spanElement.textContent;
+
+const textNode = document.createTextNode(spanText);
+breadcrumbActive.appendChild(textNode);
+

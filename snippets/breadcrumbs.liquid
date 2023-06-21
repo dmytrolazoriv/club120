@@ -17,7 +17,7 @@
     </li>
     <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
       {{ divider }}
-      <a class="breadcrumb-active" href="{{ article.url }}" itemprop="item"><span itemprop="name">{{ article.title }}</span></a>
+      <a class="breadcrumb-active" href="{{ article.url }}" itemprop="item"><span class="visually-hidden" itemprop="name">{{ article.title }}</span></a>
       <meta itemprop="position" content="3" />
     </li>
   {% elsif template contains 'blog' %}

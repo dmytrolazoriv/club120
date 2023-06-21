@@ -75,8 +75,6 @@ summary .icon-caret {
 
 /* Table section for collection styling */
 
-
-
 /* Media queries */
 
 @media (max-width: 992px) {
@@ -166,8 +164,7 @@ summary .icon-caret {
 }
 
 @media (max-width: 375px) {
-    /* Fit images for page speed */
-    .slide .rimage-outer-wrapper {
+    /* Fit images for page speed *  .slide .rimage-outer-wrapper {
         height: 375px !important;
     }
 
@@ -185,7 +182,8 @@ summary .icon-caret {
 
     .image__primary .rimage-outer-wrapper {
         height: 142px !important;
-    }
+    }/
+
     /* Fit images for page speed */
 }
 /* Media queries */
