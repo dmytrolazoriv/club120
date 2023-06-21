@@ -79,7 +79,7 @@
         "1590331020519"
       ],
       "settings": {
-        "height": "fixed",
+        "height": "adapt",
         "height_desktop": 600,
         "height_mobile": 400,
         "full_width": true,
