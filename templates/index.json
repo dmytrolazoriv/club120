@@ -51,6 +51,7 @@
         },
         "1590331020519": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/930e63c0351991497c7bd5dbbb1d7c0a.png",
             "mobile_image": "shopify:\/\/shop_images\/1d5e6638e3b464c8513425080e600fe2.png",
