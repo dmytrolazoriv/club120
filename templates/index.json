@@ -177,7 +177,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "Best Sellers",
-        "collection": "peptides",
+        "collection": "bioregulators",
         "layout": "carousel",
         "products_per_row": 5,
         "mobile_products_per_row": "2",
@@ -278,7 +278,7 @@
         "1590157729940-1": {
           "type": "collection",
           "settings": {
-            "collection": "peptides"
+            "collection": "bioregulators"
           }
         },
         "1590157729940-2": {
