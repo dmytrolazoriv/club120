@@ -290,6 +290,7 @@
         },
         "1590157729940-3": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "collection": "super-deals"
           }
