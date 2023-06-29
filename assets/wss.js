@@ -225,7 +225,7 @@ function updateMetaTag() {
     if (!isNaN(productPrice)) {
       let formattedPrice = "$" + Math.floor(productPrice);
 
-      let description = `Buy ${productName} for the best cost, ${formattedPrice}. ${brandName}. Quality. Reviews. Discounts. U.S. delivery`;
+      let description = `Buy ${productName} for best cost, ${formattedPrice}. ${brandName}. Quality. Reviews. Discounts. U.S. delivery`;
       let metaTag = document.querySelector('meta[name="description"]');
       if (metaTag) {
         metaTag.setAttribute('content', description);
