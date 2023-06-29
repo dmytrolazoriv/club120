@@ -111,10 +111,6 @@ quickBuyElements.forEach((element, index) => {
   element.setAttribute('aria-label', element.textContent);
 });
 
-
-
-
-
 const paymentButton = document.querySelectorAll('.payment-and-quantity__add');
 
 paymentButton.forEach(button => {
@@ -147,8 +143,6 @@ breadcrumbActiveElements.forEach(element => {
   });
 });
 
-
-
 // Set aria-label attributes for titleElements
 titleElements.forEach((element, index) => {
   const correspondingQuickBuyElement = quickBuyElements[index];
@@ -173,14 +167,6 @@ priceElements.forEach((element, index) => {
   correspondingQuickBuyElement.setAttribute('aria-label', ariaLabel);
 });
 
-
-
-
-
-
-
-
-
 /*Add width and height attributes for images*/
 const logoContainer = document.querySelector('.footer-logo-container');
 const logoImg = logoContainer.querySelector('img');
@@ -196,5 +182,77 @@ const spanText = spanElement.textContent;
 const textNode = document.createTextNode(spanText);
 breadcrumbActive.appendChild(textNode);
 
+/*Metatags for product cards*/
+/*Title tag*/
+function updateTitleAttribute() {
+  let productNameElement = document.querySelector('.product-title');
+  let productPriceElement = document.querySelector('.current-price');
+  let url = window.location.href;
+
+  if (productNameElement && productPriceElement && url.includes('products')) {
+    let productName = productNameElement.innerText;
+    let productPriceString = productPriceElement.innerText;
+
+    let numericPriceString = productPriceString.replace(/[^\d.]/g, '');
+    let productPrice = parseFloat(numericPriceString) / 100; // Divide by 100 to convert cents to dollars
+
+    if (!isNaN(productPrice)) {
+      let formattedPrice = "$" + Math.floor(productPrice);
+
+      let title = `${productName}, buy for the best price, ${formattedPrice}, U.S. delivery`;
+      document.title = title;
+    }
+  }
+}
+
+document.addEventListener('DOMContentLoaded', updateTitleAttribute);
+
+/*content attribute value*/
+function updateMetaTag() {
+  let productNameElement = document.querySelector('.product-title');
+  let productPriceElement = document.querySelector('.current-price');
+  let brandNameElement = document.querySelector('.brand');
+  let url = window.location.href;
+
+  if (productNameElement && productPriceElement && brandNameElement && url.includes('products')) {
+    let productName = productNameElement.innerText;
+    let productPriceString = productPriceElement.innerText;
+    let brandName = brandNameElement.querySelector('a').innerText;
+
+    let numericPriceString = productPriceString.replace(/[^\d.]/g, '');
+    let productPrice = parseFloat(numericPriceString) / 100; // Divide by 100 to convert cents to dollars
+
+    if (!isNaN(productPrice)) {
+      let formattedPrice = "$" + Math.floor(productPrice);
+
+      let description = `Buy ${productName} for the best cost, ${formattedPrice}. ${brandName}. Quality. Reviews. Discounts. U.S. delivery`;
+      let metaTag = document.querySelector('meta[name="description"]');
+      if (metaTag) {
+        metaTag.setAttribute('content', description);
+      } else {
+        metaTag = document.createElement('meta');
+        metaTag.setAttribute('name', 'description');
+        metaTag.setAttribute('content', description);
+        document.head.appendChild(metaTag);
+      }
+    }
+  }
+}
+
+document.addEventListener('DOMContentLoaded', updateMetaTag);
+
+/*h1 tag content*/
+function updateProductTitleTag() {
+  let productNameElement = document.querySelector('.product-title');
+  let brandNameElement = document.querySelector('.brand');
+  let url = window.location.href;
+
+  if (productNameElement && brandNameElement && url.includes('products')) {
+    let brandName = brandNameElement.querySelector('a').innerText;
+    productNameElement.innerText += ', ' + brandName;
+  }
+}
+
+document.addEventListener('DOMContentLoaded', updateProductTitleTag);
 
 
