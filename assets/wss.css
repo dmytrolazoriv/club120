@@ -73,10 +73,17 @@ summary .icon-caret {
     font-weight: 700;
 }
 
+/* Breadcrumbs styling */
+.breadcrumbs {
+    height: auto;
+    padding: 1.5em 0;
+    margin: 0;
+}
+/* Breadcrumbs styling */
+
 /* Table section for collection styling */
 
 /* Media queries */
-
 @media (max-width: 992px) {
     .table-header {
         font-size: 1.5rem;
@@ -132,6 +139,11 @@ summary .icon-caret {
 
     .styled-table td:last-child {
         color: #54c050;
+    }
+
+    .breadcrumbs {
+        height: auto;
+        padding: 1em 0;
     }
 }
 

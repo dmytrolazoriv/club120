@@ -125,6 +125,7 @@
         {%- endif -%}
       {% endcapture %}
 
+	{% if section.settings.breadcrumb_show %}
       {% if section.settings.breadcrumb_align == "above_heading" %}
         <div class="collection-breadcrumb collection-breadcrumb--above inline-row cf no-margin-top" data-cc-animate>
           {% render 'breadcrumbs' %}
@@ -138,6 +139,7 @@
           {% render 'breadcrumbs' %}
         </div>
       {% endif %}
+	{% endif %}
 
       {% render "search-filter",
         mode: "collection",
@@ -311,6 +313,13 @@
 					"label": "Below the heading"
 				}
 			]
+		},
+		{
+			"type": "checkbox",
+			"id": "breadcrumb_show",
+			"default": false,
+			"label": "Show breadcrumbs",
+			"info": "Click to show breadcrumbs"
 		},
 		{
 			"type": "header",

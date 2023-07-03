@@ -256,3 +256,23 @@ function updateProductTitleTag() {
 document.addEventListener('DOMContentLoaded', updateProductTitleTag);
 
 
+// Find and insert breadcrumbs inside the main container, which is in all sections
+document.addEventListener('DOMContentLoaded', function() {
+  let breadcrumbs = document.querySelector('.breadcrumbs');
+
+  let sectionContainer = document.querySelector('.section.container');
+  if (sectionContainer !== null) {
+    sectionContainer.insertBefore(breadcrumbs, sectionContainer.firstChild);
+  }
+
+  let collectionContainer = document.querySelector('.section.collection-page .container');
+  if (collectionContainer !== null) {
+    collectionContainer.insertBefore(breadcrumbs, collectionContainer.firstChild);
+  }
+
+  let productContainer = document.querySelector('.section.product-container');
+  if (productContainer !== null) {
+    productContainer.insertBefore(breadcrumbs, productContainer.firstChild);
+  }
+});
+

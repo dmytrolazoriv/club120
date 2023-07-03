@@ -219,6 +219,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       {% section 'announcement-bar' %}
       {% section 'header' %}
 
+      <!-- Begin breadcrumbs -->
+      {% render 'breadcrumbs' %}
+      <!-- End breadcrumbs -->
+
       <main id="content">
         {{ content_for_layout }}
       </main>

@@ -11141,7 +11141,7 @@ html.template-password #password-login .password-owner {
   height: 62px;
   padding: 0 20px;
   border-bottom: 1px solid {{ divider_col }};
-  border-top: 1px solid {{ divider_col }};
+  {% comment %}border-top: 1px solid {{ divider_col }};{% endcomment %}
   overflow-x: hidden;
 }
 .product-list-toolbar--sticky {
