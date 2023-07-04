@@ -43,12 +43,12 @@
 {% if template == 'gift_card' %}
   {% comment %} Gift card template logo {% endcomment %}
   <div class="logo container">
-    <meta itemprop="name" content="{{ shop.name }}">
-    <a class="logo" href="{{ routes.root_url }}" itemprop="url">
+    <meta content="{{ shop.name }}">
+    <a class="logo" href="{{ routes.root_url }}">
       {% if section.settings.logo != blank %}
         {% capture img_size %}{{ section.settings.logo_width | times: 2 }}x{% endcapture %}
         <img src="{{ section.settings.logo | img_url: img_size }}"
-             alt="{{ section.settings.logo.alt | escape }}" itemprop="logo"/>
+             alt="{{ section.settings.logo.alt | escape }}"/>
       {% else %}
         <span class="logo-text">{{ shop.name }}</span>
       {% endif %}
@@ -57,15 +57,15 @@
 {% else %}
   {% capture logo_html %}
     <div class="logo align-{% if section.settings.header_layout == 'left' %}left{% else %}center{% endif %}">
-      <meta itemprop="name" content="{{ shop.name }}">
+      <meta content="{{ shop.name }}">
       {% if section.settings.logo != blank %}
         {% capture img_size %}{{ section.settings.logo_width | times: 2 }}x{% endcapture %}
-        <a href="{{ routes.root_url }}" itemprop="url">
+        <a href="{{ routes.root_url }}">
           <img src="{{ section.settings.logo | img_url: img_size }}"
 							 width="{{ section.settings.logo.width }}"
 							 height="{{ section.settings.logo.height }}"
                {% if section.settings.compact_logo %}class="logo-desktop"{% endif %}
-               alt="{{ section.settings.logo.alt | escape }}" itemprop="logo"/>
+               alt="{{ section.settings.logo.alt | escape }}" />
 
           {% if section.settings.compact_logo %}
             <img src="{{ section.settings.compact_logo | img_url: img_size }}" width="{{ section.settings.compact_logo.width }}"
@@ -73,7 +73,7 @@
           {% endif %}
         </a>
       {% else %}
-        <a href="{{ routes.root_url }}" class="logo-text" itemprop="url">{{ shop.name }}</a>
+        <a href="{{ routes.root_url }}" class="logo-text">{{ shop.name }}</a>
       {% endif %}
     </div>
   {% endcapture %}
@@ -128,7 +128,7 @@
     </div>
   {% endcapture %}
 
-  <div class="header-container" data-section-type="header" itemscope itemtype="http://schema.org/Organization" data-cc-animate data-is-sticky="{{ section.settings.sticky_header }}">
+  <div class="header-container" data-section-type="header" data-cc-animate data-is-sticky="{{ section.settings.sticky_header }}">
     {%- assign featured_links = section.settings.nav_featured_link | split: ', ' -%}
     <div class="page-header {% if section.settings.logo_location == "links" %}layout-nav{% else %}layout-{{ section.settings.header_layout }}{% endif %} using-compact-mobile-logo">
       <div class="toolbar-container">
