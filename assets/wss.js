@@ -176,11 +176,16 @@ logoImg.setAttribute('height', '43');
 logoImg.setAttribute('alt', 'Footer logo');
 
 const breadcrumbActive = document.querySelector('.breadcrumb-active');
-const spanElement = breadcrumbActive.querySelector('span');
-const spanText = spanElement.textContent;
 
-const textNode = document.createTextNode(spanText);
-breadcrumbActive.appendChild(textNode);
+if (breadcrumbActive !== null) {
+  const spanElement = breadcrumbActive.querySelector('span');
+
+  if (spanElement !== null) {
+    const spanText = spanElement.textContent;
+    const textNode = document.createTextNode(spanText);
+    breadcrumbActive.appendChild(textNode);
+  }
+}
 
 /*Metatags for product cards*/
 /*Title tag*/
@@ -261,18 +266,112 @@ document.addEventListener('DOMContentLoaded', function() {
   let breadcrumbs = document.querySelector('.breadcrumbs');
 
   let sectionContainer = document.querySelector('.section.container');
-  if (sectionContainer !== null) {
+  if (sectionContainer !== null && breadcrumbs instanceof Node) {
     sectionContainer.insertBefore(breadcrumbs, sectionContainer.firstChild);
   }
 
   let collectionContainer = document.querySelector('.section.collection-page .container');
-  if (collectionContainer !== null) {
+  if (collectionContainer !== null && breadcrumbs instanceof Node) {
     collectionContainer.insertBefore(breadcrumbs, collectionContainer.firstChild);
   }
 
   let productContainer = document.querySelector('.section.product-container');
-  if (productContainer !== null) {
+  if (productContainer !== null && breadcrumbs instanceof Node) {
     productContainer.insertBefore(breadcrumbs, productContainer.firstChild);
   }
 });
 
+// Organization markup
+if (window.location.pathname === "/") {
+  let script = document.createElement("script");
+  script.type = "application/ld+json";
+  script.text = JSON.stringify({
+    "@context": "http://schema.org",
+    "@type": "MedicalBusiness",
+    "url": "https://club120.com/",
+    "priceRange": "$$$",
+    "name": "CLUB120 - Bioregulators, Dietary Supplements & Health Products",
+    "logo": "//club120.com/cdn/shop/files/e25510fab3c33bbc9ecb389f0219429d_500x.svg?v=1679069722",
+    "image": [
+      "https://club120.com/cdn/shop/collections/v54_460x@2x.jpg",
+      "https://club120.com/cdn/shop/collections/v61_460x@2x.jpg",
+      "https://club120.com/cdn/shop/products/EPITIDE1_1_720x@2x.jpg"
+    ],
+    "sameAs": [
+      "https://www.facebook.com/sharer.php?u=https%3A%2F%2Fclub120.com%2Fblogs%2Fnews",
+      "https://twitter.com/intent/tweet?text=News&url=https://club120.com/blogs/news",
+      "https://vk.com/peptidy_vitaminy_club120",
+      "https://t.me/club120russia"
+    ],
+    "currenciesAccepted": "USD",
+    "paymentAccepted": "cash, credit card",
+    "address": {
+      "@type": "PostalAddress",
+      "@id": "https://club120.com/",
+      "name": "CLUB120 FL, USA",
+      "addressRegion": ", Florida",
+      "addressLocality": "St. Petersburg",
+      "postalCode": "33702",
+      "streetAddress": "7901 4th St N STE 300",
+      "telephone": "7867538579",
+      "email": "info@club120.com",
+      "addressCountry": "USA"
+    },
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "7867538579",
+        "contactType": "customer support"
+      }
+    ],
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "10:00",
+        "closes": "21:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "10:00",
+        "closes": "21:00"
+      }
+    ]
+  });
+  document.head.appendChild(script);
+}
+
+// Search line markup
+
+if (window.location.pathname === "/") {
+  let script = document.createElement("script");
+  script.type = "application/ld+json";
+
+  let scriptContent = {
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "url": "https://club120.com/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://club120.com/search?type={query}"
+      },
+      "query-input": "required name=query"
+    }
+  };
+
+  script.text = JSON.stringify(scriptContent);
+
+  document.head.appendChild(script);
+}
