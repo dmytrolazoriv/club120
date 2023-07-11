@@ -375,3 +375,42 @@ if (window.location.pathname === "/") {
 
   document.head.appendChild(script);
 }
+
+
+// title and description meta tags
+function createAndAppendMetaTag(name, content) {
+  let metaTag = document.createElement("meta");
+  metaTag.setAttribute("name", name);
+  metaTag.setAttribute("content", content);
+
+  let headTag = document.querySelector("head");
+  headTag.appendChild(metaTag);
+}
+
+function updateDocumentTitle(title) {
+  document.title = title;
+}
+
+const pathname = window.location.pathname;
+
+switch (true) {
+  case pathname === "/":
+    createAndAppendMetaTag("description", "CLUB120: The brand store for Khavinson peptides, promoting health and longevity. Quality, reviews, and discounts available. In our online store, you can make payments via credit card or PayPal.");
+    updateDocumentTitle("Supplements in the online store CLUB 120: The best brand store for health and longevity.");
+    break;
+
+  case pathname.includes("/collections/vendors"):
+    createAndAppendMetaTag("description", "CLUB120: Detailed information about vendors in our online store.");
+    updateDocumentTitle("Information about vendors in our online store, CLUB120.");
+    break;
+
+  case pathname.includes("/blogs/news"):
+    createAndAppendMetaTag("description", "CLUB120: Useful articles and materials.");
+    updateDocumentTitle("CLUB120 Blog: Articles and scientific materials.");
+    break;
+
+  case pathname.includes("/blogs/news/epitalon-spray-mechanism-of-action"):
+    createAndAppendMetaTag("description", "Discover how Epitalon Spray works on the body's cells and tissues, promoting anti-aging effects and overall health benefits. Learn about the science behind this innovative supplement.");
+    updateDocumentTitle("Epitalon Spray Mechanism of Action: Benefits for the Body.");
+    break;
+}
