@@ -405,12 +405,7 @@ if (window.location.pathname === "/") {
       break;
 
     case pathname.includes("/blogs/news/bioregulators-what-are-they"):
-      updateDocumentTitle("Peptides: What They Are and How They Benefit You.");
-      break;
-
-    case pathname.includes("/pages/company"):
-      createAndAppendMetaTag("description", "CLUB120 is an international online store offering unique dietary supplements - bioregulators for health and beauty with scientifically proven effectiveness. We unite people interested in health, beauty, and active longevity. The number \"120\" in the name of the club is not accidental. 120 years is a biological resource.");
-      updateDocumentTitle("CLUB120 Blog: Articles and scientific materials.");
+      updateDocumentTitle("Bioregulators: What They Are and How They Benefit You.");
       break;
 
     case pathname.includes("/blogs/news"):
