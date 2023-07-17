@@ -51,7 +51,7 @@ function generateBreadcrumbMarkup() {
 
   let titleElement = document.getElementsByTagName('title')[0];
   let headElement = document.getElementsByTagName('head')[0];
-  headElement.insertBefore(breadcrumbMarkup, titleElement.nextSibling);
+  //headElement.insertBefore(breadcrumbMarkup, titleElement.nextSibling);
 }
 
 // Format the name by removing dashes and capitalizing first letter of each word
