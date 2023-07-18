@@ -12,7 +12,6 @@
     }
 {%- endstyle -%}
 
-{% if collection.handle == "peptides" %}
     <div class="container section-{{ section.id }}-padding">
         <h2 class="table-header">{{ section.settings.title_1 | escape }} {{ "now" | date: "%Y" }} {{ section.settings.title_2 | escape }}</h2>
         <table class="styled-table">
@@ -27,7 +26,6 @@
             </tbody>
         </table>
     </div>
-{% endif %}
 
 {% schema %}
 {
