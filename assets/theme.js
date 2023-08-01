@@ -6183,5 +6183,13 @@
     }
   });
 
+  /**
+   * Prevent all links with # as the href from doing anything
+   */
+  $('a[href="#"]').click(function(e) {
+      e.preventDefault();
+  });
+
+  
 })(theme.jQuery);  
 /* Built with Barry v1.0.8 */
