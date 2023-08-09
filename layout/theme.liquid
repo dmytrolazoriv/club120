@@ -9,34 +9,36 @@
  {% comment %} For all pages with the corresponding url addresses I add a meta tag with the following attributes (Version one does not work correctly) {% endcomment %}
  {% comment %} {% if request.query_string contains '?q=' or request.query_string contains '?filter' or request.query_string contains '?sort' or request.path contains 'checkouts' or request.path contains 'account' or request.path contains 'cart' or request.path contains 'search' %}
  <meta name="robots" content="noindex, nofollow">
-{% endif %} {% endcomment %}
+  {% endif %} {% endcomment %}
 
 {% comment %} For all pages with the corresponding url addresses I add a meta tag with the following attributes (Second version works correctly) {% endcomment %}
 {%- comment -%} Capture the content for header containing the tracking data {%- endcomment -%}
 {%- capture contentForQuerystring -%}{{ content_for_header }}{%- endcapture -%}
 {% comment %} Use string splitting to pull the value from content_for_header and apply some string clean up {% endcomment %}
 
+  {%- assign pageUrlWithHost = contentForQuerystring | split:'"pageurl":"' | last | split:'"' | first |
+     replace:'\/','/' |
+     replace:'%20',' ' |
+     replace:'\u0026','&'
+  -%}
 
-{%- assign pageUrlWithHost = contentForQuerystring | split:'"pageurl":"' | last | split:'"' | first |
-   replace:'\/','/' | 
-   replace:'%20',' ' | 
-   replace:'\u0026','&'
--%}
+  {% if pageUrlWithHost contains '?q=' or
+        pageUrlWithHost contains '/search' or
+        pageUrlWithHost contains '?filter' or
+        pageUrlWithHost contains '?sort' or
+        pageUrlWithHost contains '/checkouts' or
+        pageUrlWithHost contains '/account' or
+        pageUrlWithHost contains '/cart' or
+        pageUrlWithHost contains '/en-ca/' or
+        pageUrlWithHost contains '?pr_' or
+        pageUrlWithHost contains '?id=' or
+        pageUrlWithHost contains 'index.php' or
+        pageUrlWithHost contains '?utm' %}
 
-{% if pageUrlWithHost contains '?q=' or
-      pageUrlWithHost contains '/search' or 
-      pageUrlWithHost contains '?filter' or 
-      pageUrlWithHost contains '?sort' or 
-      pageUrlWithHost contains '/checkouts' or 
-      pageUrlWithHost contains '/account' or 
-      pageUrlWithHost contains '/cart' or
-      pageUrlWithHost contains '/en-ca/' %}
+    <meta name="robots" content="noindex, nofollow" />
 
-  <meta name="robots" content="noindex, nofollow" />
-
-{% endif %}
+  {% endif %}
  {% comment %} For all pages with the corresponding url addresses I add a meta tag with the following attributes (Second version works correctly) {% endcomment %}
-
 
 
   <!-- Google Tag Manager -->
@@ -46,7 +48,7 @@
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-P4MTPBQ');</script>
   <!-- End Google Tag Manager -->
-  
+
 
   <title>
     {{ page_title }}{% if current_tags %} &ndash; {{ 'general.meta.tagged' | t }} "{{ current_tags | join: ', ' }}"{% endif %}{% if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif %}{% unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless %}
