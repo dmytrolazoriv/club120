@@ -10,6 +10,7 @@
         "image_overlay_style": "standard",
         "text_alignment": "center center",
         "breadcrumb_align": "above_heading",
+        "breadcrumb_show": false,
         "pagination_limit_int": 36,
         "products_per_row": 4,
         "mobile_products_per_row": "2",
@@ -28,8 +29,8 @@
     "table": {
       "type": "table-collection",
       "settings": {
-        "title_1": "Best place to buy peptides online in",
-        "title_2": "at the best price",
+        "title_1": "Best place to buy bioregulators online in",
+        "title_2": ", at the best price",
         "padding_top": 16,
         "padding_bottom": 16
       }
