@@ -4,7 +4,9 @@
   <!-- Canopy 4.3.1 -->
 
   {% render 'head-tag' %}
-
+  {% if template.name == "index" %} 
+    <meta name="it-rating" content="it-rat-3f08fe5295565f6c5088500ef0007bf1" />
+  {% endif %}
   <meta name="theme-color" content="{{ settings.feature_col }}">
  {% comment %} For all pages with the corresponding url addresses I add a meta tag with the following attributes (Version one does not work correctly) {% endcomment %}
  {% comment %} {% if request.query_string contains '?q=' or request.query_string contains '?filter' or request.query_string contains '?sort' or request.path contains 'checkouts' or request.path contains 'account' or request.path contains 'cart' or request.path contains 'search' %}
