@@ -1,3 +1,7 @@
+{% assign product_faq = product.metafields.custom.faq_product.value %}
+{% assign question = product_faq.question.value %}
+{% assign answer = product_faq.answer.value %}
+                            
 {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
 {{ 'collapsible-content.css' | asset_url | stylesheet_tag }}
 
@@ -38,10 +42,6 @@
                     </div>
                     <div class="grid grid--1-col grid--2-col-tablet collapsible-content__grid {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
                         <div class="grid__item">
-
-                            {% assign product_faq = product.metafields.custom.faq_product.value %}
-                            {% assign question = product_faq.question.value %}
-                            {% assign answer = product_faq.answer.value %}
 
                             {%- for block in question -%}
                                 {% assign index = forloop.index0 %}
