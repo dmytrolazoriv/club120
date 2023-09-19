@@ -154,7 +154,7 @@
   {% endpaginate %}
 </div>
 
-
+{{ pageurl }}
 {% unless pageQuerystring contains "q=" or pageQuerystring contains "filter" or pageQuerystring contains "sort_by" %}
 {%- if collection.description != blank -%}
 	<div class="container">
