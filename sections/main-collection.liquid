@@ -154,9 +154,12 @@
   {% endpaginate %}
 </div>
 
-.
-{{ request.request_url }}
-
+{%- assign pageUrl = contentForQuerystring | split:'"pageurl":"' | last | split:'"' | first | split:'.myshopify.com' | last |
+       replace:'\/','/' | 
+       replace:'%20',' ' | 
+       replace:'\u0026','&'
+    -%}
+{%- assign pageQuerystring = pageUrl | split:'?' | last -%}
 
 {% unless pageQuerystring contains "q=" or pageQuerystring contains "filter" or pageQuerystring contains "sort_by" %}
 {%- if collection.description != blank -%}
