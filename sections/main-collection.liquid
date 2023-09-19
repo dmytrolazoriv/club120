@@ -155,8 +155,8 @@
 </div>
 
 .
-{{request.request_url}}
-{% if pageQuerystring contains "q=" or pageQuerystring contains "filter" or pageQuerystring contains "sort_by" %}123{% endif %}
+{{ request }}
+
 
 {% unless pageQuerystring contains "q=" or pageQuerystring contains "filter" or pageQuerystring contains "sort_by" %}
 {%- if collection.description != blank -%}
