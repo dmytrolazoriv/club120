@@ -160,7 +160,7 @@
        replace:'\u0026','&'
     -%}
 {%- assign pageQuerystring = pageUrl | split:'?' | last -%}
-
+{{ pageQuerystring }}
 {% unless pageQuerystring contains "q=" or pageQuerystring contains "filter" or pageQuerystring contains "sort_by" %}
 {%- if collection.description != blank -%}
 	<div class="container">
