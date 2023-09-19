@@ -39,7 +39,7 @@
                     <div class="grid grid--1-col grid--2-col-tablet collapsible-content__grid {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
                         <div class="grid__item">
 
-                            {% assign product_faq = product.metafields.custom.faq_product %}
+                            {% assign product_faq = product.metafields.custom.faq_product.value %}
                             {% assign question = product_faq.question.value %}
                             {% assign answer = product_faq.answer.value %}
 {{product_faq.answer | json}}
