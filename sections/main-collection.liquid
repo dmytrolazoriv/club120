@@ -154,7 +154,7 @@
   {% endpaginate %}
 </div>
 {%- assign pageQuerystring = pageUrl | split:'?' | last -%}
-{{ pageQuerystring }}
+{{request.request_url.params}}
 {% if pageQuerystring contains "q=" or pageQuerystring contains "filter" or pageQuerystring contains "sort_by" %}123{% endif %}
 
 {% unless pageQuerystring contains "q=" or pageQuerystring contains "filter" or pageQuerystring contains "sort_by" %}
