@@ -42,7 +42,7 @@
                             {% assign product_faq = product.metafields.custom.faq_product %}
                             {% assign question = product_faq.question.value %}
                             {% assign answer = product_faq.answer.value %}
-{{product_faq.question | json}}
+{{product_faq.answer | json}}
 
                             {%- for block in question -%}
                                 {% assign index = forloop.index0 %}
