@@ -154,7 +154,13 @@
   {% endpaginate %}
 </div>
 
-
+{%- if collection.description != blank -%}
+	<div class="container">
+		<div class="rte line-2"  data-cc-animate data-cc-animate-delay="0.4s">
+			{{ collection.description }}
+		</div>
+	</div>
+{% endif %}
 
 {% schema %}
 {
