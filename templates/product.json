@@ -23,7 +23,7 @@
           }
         },
         "judgeme_preview_badge_product_page_c78f420d": {
-          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
           }
         },
@@ -95,7 +95,7 @@
       "type": "apps",
       "blocks": {
         "judgeme_review_widget_6fccf0aa": {
-          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
           }
         }
@@ -108,7 +108,6 @@
     },
     "b9ae838a-0cc3-459a-b5b1-1e32113145d2": {
       "type": "testimonials",
-      "disabled": true,
       "blocks": {
         "template--18304227541288__b9ae838a-0cc3-459a-b5b1-1e32113145d2-16805320251343dca6-0": {
           "type": "testimonial",
@@ -143,6 +142,7 @@
         "template--18304227541288__b9ae838a-0cc3-459a-b5b1-1e32113145d2-16805320251343dca6-1",
         "template--18304227541288__b9ae838a-0cc3-459a-b5b1-1e32113145d2-16805320251343dca6-2"
       ],
+      "disabled": true,
       "custom_css": [
         ".testimonials-section {background-color: #f4f2e9;}"
       ],
@@ -160,6 +160,18 @@
         "use_dot_images": true
       }
     },
+    "faq": {
+      "type": "faq-collection",
+      "settings": {
+        "caption": "",
+        "heading": "FAQ",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "open_first_collapsible_row": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
@@ -173,6 +185,7 @@
     "main",
     "judgeme_section_review_widget_1589",
     "b9ae838a-0cc3-459a-b5b1-1e32113145d2",
+    "faq",
     "product-recommendations"
   ]
 }
