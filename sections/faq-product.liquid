@@ -1,7 +1,7 @@
 {% assign product_faq = product.metafields.custom.faq_product.value %}
 {% assign question = product_faq.question.value %}
 {% assign answer = product_faq.answer.value %}
-{% if product_faq %}+
+{% if product_faq %}
 
 {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
 {{ 'collapsible-content.css' | asset_url | stylesheet_tag }}
@@ -87,7 +87,7 @@
         </div>
     </div>
 
- {% endif %} 
+{% endif %} 
 {% schema %}
 {
   "name": "FAQ for product",
