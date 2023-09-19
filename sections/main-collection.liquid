@@ -154,7 +154,7 @@
   {% endpaginate %}
 </div>
 .
-{% if pageQuerystring contains "q=" or pageQuerystring contains "filter" or pageQuerystring contains "sort_by" %}123{% endif %}
+{% if request.path contains "q=" or request.path contains "filter" or request.path contains "sort_by" %}123{% endif %}
 
 {% unless pageQuerystring contains "q=" or pageQuerystring contains "filter" or pageQuerystring contains "sort_by" %}
 {%- if collection.description != blank -%}
