@@ -5,7 +5,8 @@
   endif{% endcomment %}
   
   {%- liquid
-
+  
+  assign product_url = product.url
 
   unless max_cols
     assign max_cols = section.settings.products_per_row | default: 4
