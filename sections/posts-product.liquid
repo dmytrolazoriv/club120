@@ -1,31 +1,4 @@
-{%- for article in blogs.news.articles -%}
-    <div class="cell article-grid">
-    <div class="article-item">
-        {%- if article.image -%}
-        <div class="article-item-thumb">
-            <a href="{{ article.url }}" class="display-block">
-            {%- assign article_image_size = 370 | append: 'x' | append: 196 -%}
-            <img src="{{ article.image | img_url: article_image_size, crop: 'center' }}" class="article-item-image width-100 lazyload" alt="{{ article.title }}"/>
-            <noscript><img src="{{ article.image | img_url: article_image_size, crop: 'center' }}" class="article-item-image width-100" alt="{{ article.title }}"/></noscript>
-            </a>
-        </div>
-        {%- endif -%}
-        <div class="article-item-caption">
-        <div class="article-item-info">
-            <span class="article-item-date">{{ article.published_at | date: '%b %d, %Y' }}</span>
-        </div>        
-        <h2 class="article-item-title">
-            <a href="{{ article.url }}">{{ article.title }}</a>
-        </h2>
-        </div>
-    </div>
-    </div>
 
-    {% capture _ %}{% increment i %}{% endcapture %}
-    {%- if i == 4 -%}
-    {% break %}
-    {%- endif -%}
-{%- endfor -%}
 
 
 {% schema %}
