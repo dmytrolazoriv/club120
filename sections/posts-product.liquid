@@ -4,19 +4,7 @@
         <h2 class="section-heading">{{ section.settings.heading }}</h2>
         <div class="product-grid row grid one-row" data-normheights=".image" data-normheights-inner="img">
 
-          
-        </div>
-      </div>
-    </section>
-</div>
-
-
-
-
-
-
-
-{%- for article in blogs.news.articles -%}
+          {%- for article in blogs.news.articles -%}
     <div class="cell article-grid">
     <div class="article-item">
         {%- if article.image -%}
@@ -44,6 +32,20 @@
     {% break %}
     {%- endif -%}
 {%- endfor -%}
+
+          
+        </div>
+      </div>
+    </section>
+</div>
+
+
+
+
+
+
+
+
 
 
 {% schema %}
