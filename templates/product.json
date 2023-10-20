@@ -179,6 +179,11 @@
         "grid_show_vendor": false,
         "products_per_row": 4
       }
+    },
+    "posts": {
+      "type": "posts-product",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -186,6 +191,7 @@
     "judgeme_section_review_widget_1589",
     "b9ae838a-0cc3-459a-b5b1-1e32113145d2",
     "faq",
-    "product-recommendations"
+    "product-recommendations",
+    "posts"
   ]
 }
