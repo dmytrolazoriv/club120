@@ -158,8 +158,8 @@
           "footer_linklist3": "footer-menu-additional-2",
           "footer_display_newsletter": true,
           "newsletter_text": "",
-          "show_country_selector": true,
-          "show_language_selector": true
+          "show_country_selector": false,
+          "show_language_selector": false
         }
       },
       "product-recommendations": {
@@ -228,7 +228,7 @@
       },
       "judgeme_core_d304301b": {
         "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-        "disabled": true,
+        "disabled": false,
         "settings": {
         }
       }
