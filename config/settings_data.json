@@ -158,8 +158,8 @@
           "footer_linklist3": "footer-menu-additional-2",
           "footer_display_newsletter": true,
           "newsletter_text": "",
-          "show_country_selector": false,
-          "show_language_selector": false
+          "show_country_selector": true,
+          "show_language_selector": true
         }
       },
       "product-recommendations": {
